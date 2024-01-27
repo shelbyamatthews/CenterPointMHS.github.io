@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Miramonte High School CenterPoint</title>
+    <title>Miramonte High School Centerpoint</title>
     <!-- Latest compiled and minified CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -18,13 +18,34 @@
             text-align: center;
         }
 
+	  .navbar {
+            background-color: #ff0000; /* Red background color */
+
+	  }
+
         .container-fluid {
             padding-top: 20px; /* Adjust the padding as needed */
         }
 
-        .logo {
+   	  .logo {
             max-width: 100%;
             height: auto;
+            width: 100px; /* Set the width of the image */
+            margin-right: 10px; /* Adjust the margin to move the image closer to Page 1 */
+            padding: 0; /* Remove padding */
+        }
+
+ 	  .navbar-nav {
+            margin: auto; /* Center the content horizontally */
+            height: 100%; /* Make the navbar height 100% */
+            display: flex;
+            align-items: center; /* Center the content vertically */
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: bold;
+            font-size: 16px; /* Adjust the font size as needed */
+            color: #000 !important; /* Set text color to dark */
         }
 
         .navbar-nav .nav-link {
@@ -44,35 +65,29 @@
             text-align: center;
             margin-top: 20px; /* Add margin at the top */
         }
+	  
     </style>
 </head>
 <body>
-    <div class="container-fluid">
-        <img src="centerpointimage.png" alt="centerpointimage.png" class="mx-auto d-block" height="250">
-        <br>
-
-        <nav class="navbar navbar-expand-sm bg-danger justify-content-center">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="swarticles.html">Student Written Articles</a></li>
-                <li class="nav-item"><a class="nav-link" href="learnsr.html">Learn Student's Rights</a></li>
-                <li class="nav-item"><a class="nav-link" href="prtvote.html">Pre Register to Vote</a></li>
-                <li class="nav-item"><a class="nav-link" href="meettheteam.html">Meet the Team</a></li>
-
-                <!-- Combined Get Involved dropdown menu -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Get Involved</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="contributeoped.html">Contribute an Op-Ed</a></li>
-                        <li><a class="dropdown-item" href="startachapter.html">Start a Chapter</a></li>
-                    </ul>
-                </li>
-                <!-- End Get Involved dropdown menu -->
-
-            </ul>
-        </nav>
-    </div>
-
+        <nav class="navbar navbar-expand-sm navbar-dark bg-danger">
+        <img src="centerpointlogo.png" alt="centerpointlogo.png" class="logo">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+		<li class="nav-item"><a class="nav-link" href="wwd.html">What We Do</a></li>
+            <li class="nav-item"><a class="nav-link" href="swarticles.html">Student Written Articles</a></li>
+            <li class="nav-item"><a class="nav-link" href="learnsr.html">Learn Student's Rights</a></li>
+            <li class="nav-item"><a class="nav-link" href="prtvote.html">Pre Register to Vote</a></li>
+            <li class="nav-item"><a class="nav-link" href="meettheteam.html">Meet the Team</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Get Involved</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="contributeoped.html">Contribute an Op-Ed</a></li>
+                    <li><a class="dropdown-item" href="startachapter.html">Start a Chapter</a></li>
+                </ul>
+            </li>
+            <!-- End Get Involved dropdown menu -->
+        </ul>
+    </nav>
     <div class="mt-4 p-5 bg-light text-dark rounded">
         <h1><strong>Meet The Team</strong></h1>
         <p><center>The CenterPoint Team is committed to upholding CenterPoint's mission statement and instilling a sense of community in the chapter.</center></p>
